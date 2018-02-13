@@ -1,0 +1,59 @@
+.body{
+    background-color: #5d747d ;
+}
+.page {
+    text-align: center;
+    margin-top: 50px;
+    color: dodgerblue;
+}
+.header{
+    background-color: #29f9b4;
+}
+.navi {
+    display: flex;
+    justify-content: center;
+    
+}
+.column {
+    display: flex;
+    justify-content: space-between;
+    height: 500px;
+    margin-top: 20px;
+}
+
+.column1 {
+    background-color: greenyellow;
+}
+.column2 {
+    background-color: skyblue;
+}
+.column3 {
+    background-color: greenyellow;
+}
+.column1_3_1 {
+    background-color: red;
+}
+.column2_2_1 {
+    background-color: blue;
+}
+.body1{
+    background-color: aliceblue;
+}
+.column1_3_2 {
+    background-color: yellow;
+}
+.column2_2_2 {
+    background-color: aqua;
+}
+.body2 {
+    background-color: red;
+}
+.column1_3_3 {
+    background-color: lightcoral;
+}
+.column2_2_3 {
+    background-color: greenyellow;
+}
+.body3 {
+    background-color: darkslategray;
+}

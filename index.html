@@ -1,13 +1,40 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="app">
 <head>
     <meta charset="UTF-8">
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.6.5/angular-route.min.js"></script>
+    <script src="script.js"></script>
+    <script src="change.js"></script>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
     <link rel="stylesheet" href="style.css">
 </head>
-<body>
-    <script src="script.js"></script>
+<body class="body {{ctrl.changeStyle.body1}} {{ctrl.changeStyle.body2}} {{ctrl.changeStyle.body3}}">
+   <div class="main" ng-controller="changeCtrl as ctrl">
+       <div class="header">
+           <h1 class="page">My Angular page</h1>
+           <h4 class="page">You can change style</h4>
+       </div>
+       <div class="navi">
+           <button type="button" class="btn btn-dark" ng-click="ctrl.but1()">Style 1</button>
+           <button type="button" class="btn btn-dark" ng-click="ctrl.but2()">Style 2</button>
+           <button type="button" class="btn btn-dark" ng-click="ctrl.but3()">Style 3</button>
+       </div>
+       <div class="column">
+           <div class="column1 {{ctrl.changeStyle.column2_2_1}} {{ctrl.changeStyle.column1_3_1}} {{ctrl.changeStyle.column1_3_3}}">
+               <h2>Column 1</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus porro, blanditiis magnam fuga accusamus consectetur quas cupiditate odio, illum? Porro consequuntur perferendis officia natus mollitia, non doloremque laborum itaque?</p>
+           </div>
+              <div class="column2 {{ctrl.changeStyle.column2_2_2}} {{ctrl.changeStyle.column2_2_3}} {{ctrl.changeStyle.column2_2_1}}">
+               <h2>Column 2</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus porro, blanditiis magnam fuga accusamus consectetur quas cupiditate odio, illum? Porro consequuntur perferendis officia natus mollitia, non doloremque laborum itaque?</p>
+           </div>
+              <div class="column3 {{ctrl.changeStyle.column1_3_3}} {{ctrl.changeStyle.column1_3_1}}">
+               <h2>Column 3</h2>
+               <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque ducimus porro, blanditiis magnam fuga accusamus consectetur quas cupiditate odio, illum? Porro consequuntur perferendis officia natus mollitia, non doloremque laborum itaque?</p>
+           </div>
+       </div>
+   </div>
 </body>
 </html>
